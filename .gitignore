@@ -131,18 +131,26 @@ dmypy.json
 *.model
 
 # Dataset files (uncomment if you don't want to track data files)
-# *.csv
-# *.json
-# *.xlsx
-# *.xls
-# *.parquet
-# *.feather
+*.csv
+*.json
+*.xlsx
+*.xls
+*.parquet
+*.feather
 
 # Large data directories
 data/
 datasets/
 raw_data/
 processed_data/
+
+# Additional dataset patterns
+*_data.csv
+*_dataset.csv
+train_*.csv
+test_*.csv
+validation_*.csv
+sample_*.csv
 
 # Model artifacts and outputs
 models/
@@ -201,5 +209,5 @@ Thumbs.db
 # *.ipynb
 
 # Submission files (uncomment if you don't want to track submissions)
-# submission*.csv
-# *_submission.csv
+submission*.csv
+*_submission.csv
